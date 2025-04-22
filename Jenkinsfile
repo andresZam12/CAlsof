@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
     CI = "false" // Desactiva que React trate los warnings como errores
-    VERCEL_TOKEN = credentials('vercel-token')
+    VERCEL_TOKEN = credentials('deividandres')
   }
   stages {
     stage('Declarative: Checkout SCM') {
